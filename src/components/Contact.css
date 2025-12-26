@@ -2,15 +2,37 @@
     background: var(--color-bg-secondary);
 }
 
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .section-title {
+    text-align: center;
+}
+
+.contact .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .contact__subtitle {
     color: var(--color-text-muted);
     font-size: var(--font-size-lg);
     margin-bottom: var(--space-10);
     max-width: 500px;
+    text-align: center;
 }
 
 .contact__form {
     max-width: 500px;
+    width: 100%;
+}
+
+.contact__label {
+    text-align: left;
 }
 
 .contact__form-group {
