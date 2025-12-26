@@ -1,0 +1,8 @@
+/* App-level styles - minimal since most styles are in components */
+#root {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
