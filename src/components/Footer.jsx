@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container footer__container">
                 <p className="footer__text">
-                    © {currentYear} Rohit Raj. Built with <Heart size={14} className="footer__heart" /> using React.
+                    © {currentYear} Rohit Raj. Built with <Heart size={14} className="footer__heart" />
                 </p>
                 <div className="footer__links">
                     <a
