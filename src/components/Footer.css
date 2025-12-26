@@ -14,17 +14,38 @@
 .footer__text {
     font-size: var(--font-size-sm);
     color: var(--color-text-subtle);
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.footer__heart {
+    color: #ef4444;
+    display: inline-block;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .footer__links {
     display: flex;
-    gap: var(--space-6);
+    gap: var(--space-4);
 }
 
 .footer__link {
-    font-size: var(--font-size-sm);
     color: var(--color-text-muted);
     transition: var(--transition-fast);
+    display: flex;
 }
 
 .footer__link:hover {

@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Send, Loader2, CheckCircle, XCircle } from 'lucide-react';
 import './Contact.css';
 
 const SERVICE_ID = 'service_fuq70al';
@@ -91,18 +92,30 @@ export default function Contact() {
                         className="contact__btn"
                         disabled={status === 'sending'}
                     >
-                        {status === 'sending' ? 'Sending...' : 'Send Message'}
+                        {status === 'sending' ? (
+                            <>
+                                <Loader2 size={18} className="contact__btn-icon contact__btn-icon--spin" />
+                                Sending...
+                            </>
+                        ) : (
+                            <>
+                                <Send size={18} className="contact__btn-icon" />
+                                Send Message
+                            </>
+                        )}
                     </button>
 
                     {status === 'success' && (
-                        <p className="contact__status contact__status--success">
-                            Message sent successfully! I'll get back to you soon.
-                        </p>
+                        <div className="contact__status contact__status--success">
+                            <CheckCircle size={18} />
+                            <span>Message sent successfully! I'll get back to you soon.</span>
+                        </div>
                     )}
                     {status === 'error' && (
-                        <p className="contact__status contact__status--error">
-                            Something went wrong. Please try again.
-                        </p>
+                        <div className="contact__status contact__status--error">
+                            <XCircle size={18} />
+                            <span>Something went wrong. Please try again.</span>
+                        </div>
                     )}
                 </form>
             </div>

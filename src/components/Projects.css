@@ -15,7 +15,7 @@
 }
 
 .project-card:hover {
-    border-color: var(--color-text-subtle);
+    border-color: var(--color-accent);
     transform: translateY(-4px);
 }
 
@@ -30,9 +30,15 @@
     color: var(--color-accent);
 }
 
+.project-card__links {
+    display: flex;
+    gap: var(--space-3);
+}
+
 .project-card__link {
     color: var(--color-text-muted);
     transition: var(--transition-fast);
+    display: flex;
 }
 
 .project-card__link:hover {
@@ -68,7 +74,7 @@
 .project-card__tech-item {
     font-size: var(--font-size-xs);
     color: var(--color-text-subtle);
-    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
 }
 
 @media (max-width: 480px) {

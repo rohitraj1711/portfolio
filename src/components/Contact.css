@@ -43,6 +43,7 @@
 .contact__input:focus {
     outline: none;
     border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .contact__textarea {
@@ -60,6 +61,10 @@
     border-radius: var(--radius-md);
     transition: var(--transition-base);
     margin-top: var(--space-2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
 }
 
 .contact__btn:hover:not(:disabled) {
@@ -72,12 +77,32 @@
     cursor: not-allowed;
 }
 
+.contact__btn-icon {
+    flex-shrink: 0;
+}
+
+.contact__btn-icon--spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .contact__status {
     margin-top: var(--space-4);
     font-size: var(--font-size-sm);
-    text-align: center;
-    padding: var(--space-3);
+    padding: var(--space-3) var(--space-4);
     border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
 }
 
 .contact__status--success {
