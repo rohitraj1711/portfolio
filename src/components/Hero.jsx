@@ -1,34 +1,14 @@
-import { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowDown, FileText } from 'lucide-react';
 import './Hero.css';
 
 export default function Hero() {
-    const [showTyping, setShowTyping] = useState(false);
-    const [typingComplete, setTypingComplete] = useState(false);
-
-    useEffect(() => {
-        // Start typing animation after a brief delay
-        const startTimer = setTimeout(() => setShowTyping(true), 500);
-        // Complete typing after animation duration
-        const completeTimer = setTimeout(() => setTypingComplete(true), 3000);
-
-        return () => {
-            clearTimeout(startTimer);
-            clearTimeout(completeTimer);
-        };
-    }, []);
-
     return (
         <section id="home" className="hero">
             <div className="container hero__container">
                 <div className="hero__content">
                     <p className="hero__greeting">Hi, I'm</p>
-                    <h1 className={`hero__name ${typingComplete ? 'hero__name--glitch' : ''}`}>
-                        {showTyping && (
-                            <span className={`hero__name-text ${!typingComplete ? 'hero__name-text--typing' : ''}`}>
-                                Rohit Raj
-                            </span>
-                        )}
+                    <h1 className="hero__name">
+                        <span className="hero__name-text hero__name-text--glitch">Rohit Raj</span>
                     </h1>
                     <h2 className="hero__title">Full Stack Developer</h2>
                     <p className="hero__description">
@@ -40,8 +20,14 @@ export default function Hero() {
                         <a href="#contact" className="hero__btn hero__btn--primary">
                             Get In Touch
                         </a>
-                        <a href="#projects" className="hero__btn hero__btn--secondary">
-                            View Projects
+                        <a
+                            href="/Rohit CV.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hero__btn hero__btn--secondary"
+                        >
+                            <FileText size={18} />
+                            View Resume
                         </a>
                     </div>
 

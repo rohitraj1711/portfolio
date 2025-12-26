@@ -4,7 +4,7 @@ import { Send, Loader2, CheckCircle, XCircle } from 'lucide-react';
 import './Contact.css';
 
 const SERVICE_ID = 'service_fuq70al';
-const TEMPLATE_ID = 'template_tzqciz6';
+const TEMPLATE_ID = 'template_hglsgii';
 const PUBLIC_KEY = 'tcY2kKEyk8eCtVSy9';
 
 export default function Contact() {
