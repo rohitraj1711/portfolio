@@ -1,16 +1,62 @@
-# React + Vite
+# Rohit Raj | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimal, and responsive single-page portfolio website built with React and Vite.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design** - Works seamlessly on all devices
+- **Light/Dark Theme** - Toggle between themes with system preference detection
+- **Smooth Animations** - Typing effect and glitch animation for the hero section
+- **Contact Form** - Integrated with EmailJS for easy communication
+- **Modern Tech Stack** - React 19, Vite, Lucide Icons
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Lucide React Icons
+- EmailJS
+- Vanilla CSS with CSS Variables
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx     # Navigation with theme toggle
+│   ├── Hero.jsx       # Hero section with profile image
+│   ├── Skills.jsx     # Skills section
+│   ├── Projects.jsx   # Projects showcase
+│   ├── Contact.jsx    # Contact form with EmailJS
+│   └── Footer.jsx     # Footer with social links
+├── App.jsx            # Main app component
+├── App.css            # App-level styles
+├── index.css          # Global styles and design tokens
+└── main.jsx           # Entry point
+```
+
+## 📬 Contact
+
+- **Email**: rohitraj820883@gmail.com
+- **LinkedIn**: [rohitraj1711](https://www.linkedin.com/in/rohitraj1711/)
+- **GitHub**: [rohitraj1711](https://github.com/rohitraj1711)
+
+---
+
+<p align="center">Made with ❤️ by Rohit Raj</p>
