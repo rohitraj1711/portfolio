@@ -77,7 +77,7 @@ export default function Hero() {
                 <div className="hero__image-wrapper">
                     <div className="hero__image-container">
                         <img
-                            src="/profile.png"
+                            src="/profile.webp"
                             alt="Rohit Raj"
                             className="hero__image"
                         />
