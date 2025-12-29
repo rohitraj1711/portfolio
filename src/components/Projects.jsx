@@ -8,7 +8,7 @@ const projectsData = [
         subtitle: 'Bike Rental Management System',
         description: 'Full-stack React Native vehicle rental app enabling users to browse rental shops, view vehicles, and complete bookings with real-time price calculations.',
         tech: ['React Native', 'TypeScript', 'React Navigation', 'REST APIs'],
-        github: 'https://github.com/rohitraj1711',
+        github: 'https://github.com/rohitraj1711/pickNride',
         date: 'Nov 2025',
     },
     {
@@ -17,7 +17,7 @@ const projectsData = [
         subtitle: 'Streaming Platform Mobile App',
         description: 'Cross-platform streaming application allowing users to browse, search, and save movies with modern UI, authentication, and watchlist features.',
         tech: ['React Native', 'TypeScript', 'Firebase', 'Expo'],
-        github: 'https://github.com/rohitraj1711',
+        github: 'https://github.com/rohitraj1711/BingeIt',
         date: 'Jun 2025',
     },
     {
@@ -26,7 +26,7 @@ const projectsData = [
         subtitle: 'Developer Portfolio',
         description: 'Clean, minimal personal portfolio showcasing projects and skills with responsive design and optimized performance using Vite.',
         tech: ['React.js', 'Vite', 'JavaScript', 'CSS'],
-        github: 'https://github.com/rohitraj1711',
+        github: 'https://github.com/rohitraj1711/portfolio',
         date: 'Apr 2024',
     },
 ];

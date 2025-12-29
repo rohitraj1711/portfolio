@@ -21,7 +21,7 @@ export default function Hero() {
                             Get In Touch
                         </a>
                         <a
-                            href="/Rohit CV.pdf"
+                            href="/general-cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hero__btn hero__btn--secondary"
